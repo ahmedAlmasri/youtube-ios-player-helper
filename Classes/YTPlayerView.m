@@ -908,6 +908,7 @@ createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
 - (WKWebView *)createNewWebView {
   WKWebViewConfiguration *webViewConfiguration = [[WKWebViewConfiguration alloc] init];
   webViewConfiguration.allowsInlineMediaPlayback = YES;
+  webViewConfiguration.allowsPictureInPictureMediaPlayback = NO;
   webViewConfiguration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
   WKWebView *webView = [[WKWebView alloc] initWithFrame:self.bounds
                                           configuration:webViewConfiguration];
